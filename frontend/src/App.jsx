@@ -31,7 +31,7 @@ function App() {
           <Route path="/createpost" element={<CreatePost />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/post/:postId" element={<DetailedPost />} />
-          <Route path="/references" element={<References />} />
+          <Route path="/references" element={<References />} /> {/* <-- New Route */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
