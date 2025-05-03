@@ -1,0 +1,127 @@
+/* Base styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.home-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #005eb8; /* NHS Blue */
+}
+
+.home-header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.home-header nav ul li a:hover {
+  color: #a2d2ff; /* Lighter blue on hover */
+}
+
+.main {
+  padding: 2rem;
+}
+
+/* Mental Health Intro */
+.mental-health-intro {
+  margin-left: 5%;
+}
+
+.mental-health-intro h1,
+.mental-health-intro-title {
+  color: #000000;
+}
+
+.mental-health-intro-title {
+  margin-bottom: 1rem;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.mental-health-intro article {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h2 {
+  color: #000000;
+  font-size: 1.75em;
+  margin-bottom: 0.75rem;
+}
+
+/* Mind Plan Section */
+.mind-plan {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.mind-plan h2 {
+  margin-bottom: 1.5rem;
+}
+
+.mind-plan-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mind-plan-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.mind-plan-info h3 {
+  margin: 0 0 1rem;
+  font-size: 1.3em;
+}
+
+.mind-plan-info p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.mind-plan-info button {
+  background-color: #007f3b; /* NHS Green */
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.mind-plan-info button:hover {
+  background-color: #005eb8; /* NHS Blue */
+}
+
+.mind-plan-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.mind-plan-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,10 @@
+newterminal -> mongod
+
+cd backend
+npm install
+npm start
+
+cd frontend
+npm install
+npm run dev
+front end: http://localhost:5173/

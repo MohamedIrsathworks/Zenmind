@@ -1,0 +1,29 @@
+/* src/styles/references.css */
+
+.references-container {
+    padding: 2rem;
+  }
+  
+  .references-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1.5rem; /* Space between the columns */
+  }
+  
+  .pdf-viewer {
+    border: none; /* Remove border */
+    overflow: hidden; /* Remove overflow */
+  }
+  
+  .pdf-viewer iframe {
+    width: 100%; /* Make iframe take up full width */
+    height: 500px; /* You can adjust the height as needed */
+    border: none; /* Remove iframe border */
+    background: none; /* Remove background */
+  }
+  
