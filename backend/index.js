@@ -1,3 +1,5 @@
+const path = require('path'); // Add this line to use path module
+
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
@@ -51,3 +53,14 @@ mongoose
   .catch((err) => {
     console.error("❌ MongoDB connection failed:", err.message);
   });
+
+// Serve static files in production
+if (process.env.NODE_ENV === 'production') {
+  // Set static folder (assuming your React app is in the "client/build" folder)
+  app.use(express.static(path.join(__dirname, 'client/build')));
+
+  // For all other routes, serve index.html (React will handle them)
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
