@@ -5,7 +5,7 @@ import sad from "../../assets/sad-test.png";
 import workplace from "../../assets/workplace-test.png";
 import happiness from "../../assets/happy-test.png";
 
-export const API_URL = "http://localhost:5000";
+export const API_URL = "https://zenmind-backend-8yx8.onrender.com";
 
 export const categories = [
   { id: 1, type: "Depression" },
