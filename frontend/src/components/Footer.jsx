@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/footer.css";
 
 const Footer = () => (
@@ -25,14 +26,14 @@ const Footer = () => (
           <h2 className="text-uppercase">Get Started</h2>
           <ul className="nav flex-column">
             <li className="nav-item mb-2">
-              <a href="/signup" className="nav-link p-0 text-body-secondary">
+              <Link to="/signup" className="nav-link p-0 text-body-secondary">
                 <h6>Sign Up</h6>
-              </a>
+              </Link>
             </li>
             <li className="nav-item mb-2">
-              <a href="/login" className="nav-link p-0 text-body-secondary">
+              <Link to="/login" className="nav-link p-0 text-body-secondary">
                 <h6>Login</h6>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -42,14 +43,14 @@ const Footer = () => (
           <h2 className="text-uppercase">Support Hub</h2>
           <ul className="nav flex-column">
             <li className="nav-item mb-2">
-              <a href="/gethelp" className="nav-link p-0 text-body-secondary">
+              <Link to="/gethelp" className="nav-link p-0 text-body-secondary">
                 <h6>Get Help</h6>
-              </a>
+              </Link>
             </li>
             <li className="nav-item mb-2">
-              <a href="/test" className="nav-link p-0 text-body-secondary">
+              <Link to="/test" className="nav-link p-0 text-body-secondary">
                 <h6>Take a Quiz</h6>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -59,9 +60,9 @@ const Footer = () => (
           <h2 className="text-uppercase">Resources</h2>
           <ul className="nav flex-column">
             <li className="nav-item mb-2">
-              <a href="/references" className="nav-link p-0 text-body-secondary">
+              <Link to="/references" className="nav-link p-0 text-body-secondary">
                 <h6>References</h6>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
